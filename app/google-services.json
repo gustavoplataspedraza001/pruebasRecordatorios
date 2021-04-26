@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "118926161074",
+    "project_id": "lmmovil2",
+    "storage_bucket": "lmmovil2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118926161074:android:0fb436a3954832c96005ab",
+        "android_client_info": {
+          "package_name": "com.example.pruebasrecordatorios"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118926161074-a28iqm6dh9pdljqbtirvfk2omkifv74r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlMbJAXZkvCdaBJA-vCaxZcMkCPEW1oME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118926161074-a28iqm6dh9pdljqbtirvfk2omkifv74r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

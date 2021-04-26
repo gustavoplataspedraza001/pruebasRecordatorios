@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/pruebas"
+    android:theme="@style/Theme.Design.Light.NoActionBar"
+    tools:context=".checklistCierre.DepartamentosActivity"
+    android:animateLayoutChanges="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbarDepartamentos"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/rojo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imgDepartamentoRegresar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@color/rojo"
+            android:src="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Departamentos"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imgDepartamentoRegresar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btnTerminarTurno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Terminar turno\n Manualmente"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:drawableTop="@drawable/ic_work"
+        android:drawableTint="@color/rojo"
+        android:textColor="@color/rojo"
+        android:background="@drawable/roundedbtnrojolite"
+        android:elevation="5dp"
+        android:translationZ="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <ListView
+        android:id="@+id/lv_departamentos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:dividerHeight="0.5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:divider="#00FFFFFF"
+        android:focusable="false"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarDepartamentos" />
+</androidx.constraintlayout.widget.ConstraintLayout>
